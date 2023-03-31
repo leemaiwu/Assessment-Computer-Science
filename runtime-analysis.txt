@@ -1,0 +1,41 @@
+Step 1: Runtime Analysis
+
+    Results for the extraLargeArray
+    append 5.8935 ms
+    insert 771.784792 ms
+
+    Results for the largeArray
+    append 416.417 μs = 
+    insert 6.648583 ms
+
+    Results for the mediumArray
+    append 89.541 μs
+    insert 210.292 μs
+
+    Results for the smallArray
+    append 122.833 μs
+    insert 25.084 μs
+
+    Results for the tinyArray
+    append 150.875 μs
+    insert 18.958 μs
+
+
+
+Pattern I noticed:
+
+    The larger the 'size' input (array length), the longer it takes for the function 
+    to execute. And using the unshift() method is only faster when the input value 
+    is 100 or less, given our examples. Otherwise the push() method is the way to go, 
+    it's significantly faster as the array length grows.
+
+
+Extra credit / Research:
+
+    The reason unshift() is faster than push() for small arrays is because of their 
+    time complexity and how they work 'under the hood'. unshift() has a time complexity 
+    of O(1), which is linear, so the starting point is next to nothing. While the time 
+    complexity of push() is O(1), which means it is constant. That's why the push() 
+    method is far more effective with large arrays, it doesn't have to reposition and 
+    reassign an index to existing elements like the unshift() method does.
+
