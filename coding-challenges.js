@@ -1,4 +1,4 @@
-// 1. Sum Zero  --  Runtime Complexity: O(n^2)  //
+// 1. Sum Zero  --  Runtime Complexity: O(n^2) || Space Complexity: O(1) //
 
     function addToZero(array) {
         for (let i = 0; i < array.length; i++) {
@@ -15,7 +15,7 @@
     console.log(addToZero([1, 2, 3, -2])) // true
 
 
-// 2. Unique Characters  --  Runtime Complexity: O(n^2) //
+// 2. Unique Characters  --  Runtime Complexity: O(n^2) || Space Complexity: O(1) //
 
     function hasUniquechars(str) {
         let strArr = str.split('')
@@ -32,7 +32,7 @@
     console.log(hasUniquechars("Moonday"))
 
 
-// 3. Pangram Sentence  --  Runtime Complexity: O(n) //
+// 3. Pangram Sentence  --  Runtime Complexity: O(n) || Space Complexity: O(1) //
 
     function isPangram(str) {
         let alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
@@ -48,7 +48,7 @@
     console.log(isPangram('I like cats, but not mice'))
 
 
-// 4. Longest Word  --  Runtime Complexity: O(n)  //
+// 4. Longest Word  --  Runtime Complexity: O(n) || Space Complexity: O(n) //
 
     function findLongestWord(strArr) {
         let longestWord = ''

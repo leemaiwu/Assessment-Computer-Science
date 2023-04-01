@@ -24,7 +24,7 @@ Step 1: Runtime Analysis
 
 Pattern I noticed:
 
-    The larger the 'size' input (array length), the longer it takes for the function 
+    The larger the input number (array length), the longer it takes for the function 
     to execute. And using the unshift() method is only faster when the input value 
     is 100 or less, given our examples. Otherwise the push() method is the way to go, 
     it's significantly faster as the array length grows.
